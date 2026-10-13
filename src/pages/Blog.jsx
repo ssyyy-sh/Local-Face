@@ -1,3 +1,4 @@
+import { img } from '../img.js';
 import { useMemo, useState } from 'react';
 import { ArticleCard, Breadcrumbs } from '../components/ui.jsx';
 import { SearchIcon, ChevronDown } from '../components/Icons.jsx';
@@ -43,7 +44,7 @@ export default function Blog() {
                 senses and deepen your appreciation for these olfactory wonders.
               </p>
             </div>
-            <img src="/img/collage.jpg" alt="" />
+            <img src={img('collage')} alt="" />
           </div>
 
           <div className="blog-tools">

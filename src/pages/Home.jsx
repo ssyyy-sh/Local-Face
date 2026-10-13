@@ -1,3 +1,4 @@
+import { img } from '../img.js';
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel.jsx';
 import { ArticleCard, ProductCard, SectionTitle } from '../components/ui.jsx';
@@ -16,14 +17,14 @@ export default function Home() {
             <Link to="/shop" className="btn btn--accent">Shop Now</Link>
           </div>
           <div className="hero__img">
-            <img src="/img/hero.jpg" alt="Crystal perfume bottle" />
+            <img src={img('hero')} alt="Crystal perfume bottle" />
           </div>
         </div>
       </section>
 
       {/* WELCOME */}
       <section className="welcome">
-        <div className="welcome__bg" style={{ backgroundImage: 'url(/img/story.jpg)' }} />
+        <div className="welcome__bg" style={{ backgroundImage: `url(${img('story')})` }} />
         <div className="container welcome__inner">
           <SectionTitle>Welcome to Local Face</SectionTitle>
           <p>
@@ -39,7 +40,7 @@ export default function Home() {
       {/* VALUES */}
       <section className="values">
         <div className="values__img">
-          <img src="/img/values.jpg" alt="Perfume bottle with flowers" />
+          <img src={img('values')} alt="Perfume bottle with flowers" />
         </div>
         <div className="values__text">
           <SectionTitle accent={false}>Our Values</SectionTitle>
@@ -89,7 +90,7 @@ export default function Home() {
               <Link to="/shop" className="btn btn--accent">Know More</Link>
             </div>
             <div className="sale__img">
-              <img src="/img/sale.jpg" alt="" />
+              <img src={img('sale')} alt="" />
             </div>
           </div>
         </div>

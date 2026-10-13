@@ -1,4 +1,4 @@
-const img = (n) => `/img/${n}.jpg`;
+import { img } from '../img.js';
 
 export const products = [
   { id: 'luxurious-elixir-rough', name: 'Luxurious Elixir Rough', price: 220, rating: 4, reviews: 60, image: img('p1'), collection: 'Vintage Treasures', family: 'Woody', gender: 'Unisex', occasion: 'Evening' },

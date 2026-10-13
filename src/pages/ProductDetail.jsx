@@ -1,3 +1,4 @@
+import { img } from '../img.js';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Breadcrumbs, ProductCard, SectionTitle, Stars } from '../components/ui.jsx';
@@ -12,9 +13,9 @@ const sizes = [
 ];
 
 const notes = [
-  { title: 'Top Note', text: 'Citrus Accord, Sun-kissed Fruits', image: '/img/note1.jpg' },
-  { title: 'Heart Note', text: 'Golden Roses, Rare Blooms', image: '/img/note2.jpg' },
-  { title: 'Base Note', text: 'Amber, Vanilla, Sandalwood', image: '/img/note3.jpg' },
+  { title: 'Top Note', text: 'Citrus Accord, Sun-kissed Fruits', image: img('note1') },
+  { title: 'Heart Note', text: 'Golden Roses, Rare Blooms', image: img('note2') },
+  { title: 'Base Note', text: 'Amber, Vanilla, Sandalwood', image: img('note3') },
 ];
 
 export default function ProductDetail() {

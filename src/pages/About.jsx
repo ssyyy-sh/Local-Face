@@ -1,3 +1,4 @@
+import { img } from '../img.js';
 import { Breadcrumbs, SectionTitle } from '../components/ui.jsx';
 
 const unique = [
@@ -43,7 +44,7 @@ export default function About() {
           </p>
         </div>
         <div className="container">
-          <img className="story__img" src="/img/story.jpg" alt="Perfume bottles on a lit shelf" />
+          <img className="story__img" src={img('story')} alt="Perfume bottles on a lit shelf" />
         </div>
       </section>
 

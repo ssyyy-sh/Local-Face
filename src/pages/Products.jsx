@@ -1,3 +1,4 @@
+import { img } from '../img.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Breadcrumbs, ProductCard, SectionTitle } from '../components/ui.jsx';
@@ -130,7 +131,7 @@ export default function Products() {
           <SectionTitle accent={false}>Special Offers</SectionTitle>
 
           <div className="offer offer--aqua">
-            <div className="offer__img"><img src="/img/aqua.jpg" alt="Aqua Serenity perfume" /></div>
+            <div className="offer__img"><img src={img('aqua')} alt="Aqua Serenity perfume" /></div>
             <div className="offer__text">
               <h3>Limited Time Offer: 20% OFF on Aqua Serenity Perfume!</h3>
               <h4>Aqua Serenity</h4>
@@ -148,7 +149,7 @@ export default function Products() {
               <p>Indulge in the divine allure of Golden Angel, a fragrance that embodies celestial elegance and radiance.</p>
               <Link to="/shop/the-golden-legacy" className="btn btn--outline btn--sm">Know More</Link>
             </div>
-            <div className="offer__img"><img src="/img/angel.jpg" alt="Golden Angel perfume" /></div>
+            <div className="offer__img"><img src={img('angel')} alt="Golden Angel perfume" /></div>
           </div>
         </div>
       </section>

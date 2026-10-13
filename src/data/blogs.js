@@ -1,4 +1,4 @@
-const img = (n) => `/img/${n}.jpg`;
+import { img } from '../img.js';
 
 export const blogs = [
   {
